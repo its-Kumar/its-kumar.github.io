@@ -2,6 +2,79 @@ body{
 	background-color: lightgray;
 }
 
+header {
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	display: table !important;
+	table-layout: fixed;
+	padding-left: 16px ;
+	padding-right:16px ;
+	transition: opacity .5s,padding-left .125s;
+	width: 100%;
+	min-width: 100%;
+}
+
+#logo{
+	display: table-cell;
+	max-width: 380px;
+	vertical-align: middle;
+}
+
+#logo a{
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#logo span{
+	display: inline-block;
+	max-width: 380px;
+	overflow: hidden;
+	padding: 16px 12px;
+	color: rgba(0,0,0,0.8199999928);
+	font-size: 15pt;
+	font-weight: 300;
+	line-height: 1.333;
+}
+
+#nav-wrapper{
+	min-width: 100%;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#nav-bar{
+	text-align: right;
+}
+
+#nav-bar ul{
+	font-size: 16px;
+	list-style-type: none;
+
+}
+
+#nav-bar ul li{
+	display: inline-block;
+	overflow: visible;
+	position: relative;
+	text-align: left;
+	transition: opacity 0ms 300ms;
+	vertical-align: middle;
+	padding: 10px 12px;
+}
+
+#nav-bar ul li a{
+	color: rgba(0,0,0,0.8199999928);
+	text-decoration: none;
+	font-weight: 400;
+	cursor: pointer;
+}
+
+#search-wrapper{
+	display: table-cell;
+	position: relative;
+}
+
 #profile-wrapper{
 	text-align: center;
 }
