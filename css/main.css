@@ -1,9 +1,16 @@
+:root{
+	--mainColor: lightgrey;
+	--secondaryColor: white;
+	--mainText: #212121;
+}
+
 body{
-	background-color: lightgray;
+	background-color: var(--mainColor) !important;
+	color: var(--mainText) !important;
+	font-family: sans-serif !important;
 }
 
 header {
-	overflow: hidden;
 	position: fixed;
 	top: 0;
 	display: table !important;
@@ -29,9 +36,9 @@ header {
 #logo span{
 	display: inline-block;
 	max-width: 380px;
-	overflow: hidden;
+	/* overflow: hidden; */
 	padding: 16px 12px;
-	color: rgba(0,0,0,0.8199999928);
+	color: var(--mainText);
 	font-size: 15pt;
 	font-weight: 300;
 	line-height: 1.333;
@@ -55,7 +62,7 @@ header {
 
 #nav-bar ul li{
 	display: inline-block;
-	overflow: visible;
+	/*overflow: visible;*/
 	position: relative;
 	text-align: left;
 	transition: opacity 0ms 300ms;
@@ -64,7 +71,7 @@ header {
 }
 
 #nav-bar ul li a{
-	color: rgba(0,0,0,0.8199999928);
+	color: var(--mainText);
 	text-decoration: none;
 	font-weight: 400;
 	cursor: pointer;
@@ -101,4 +108,8 @@ ul{
 .social{
 	width:20px;
 	height: 20px;
+}
+
+.card{
+	background-color: var(--secondaryColor) !important;
 }

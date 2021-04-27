@@ -2,11 +2,13 @@
 <html lang="en">
 
   <head>
-    <link href="css/main.css" rel="stylesheet" type="text/css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" href="./images/Kumar.jpg" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link id="theme-style" rel="stylesheet" type="text/css" href="">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <meta charset="UTF-8">
     <meta name="description"
       content="Hi I'm Kumar Shanu!
@@ -22,14 +24,18 @@
     <script>
       AOS.init();
     </script>
-    <header>
-      <div id="logo"><a href="/"><img /><span>Kumar Shanu</span></a></div>
+    <header class="fixed-top">
+      <div id="logo"><a href=""><img /><span>Kumar Shanu</span></a></div>
       <div id="nav-wrapper" aria-hidden="false">
-        <nav id="nav-bar" style="visibility: visible;">
+        <nav id="nav-bar">
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Project page</a></li>
+            <li><a>
+                <img id="theme-change" width="20" height="20" src="images/dark.svg">
+              </a>
+            </li>
+            <li><a href="">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Project page</a></li>
           </ul>
         </nav>
       </div>
@@ -38,7 +44,7 @@
     <div class="container" style="padding-top: 36px;">
       <div class="row">
         <div data-aos="fade-up-right" class="col-md-3">
-          <div class="card card-body h-100  border-info" id="profile-wrapper">
+          <div class="card card-body h-100 border-info" id="profile-wrapper">
             <img id="profile-pic" src="images/Kumar.jpg">
             <hr>
             <h4>Hi I'm Kumar Shanu!</h4>
@@ -47,7 +53,7 @@
         </div>
 
         <div data-aos="fade-up-left" class="col-md-9">
-          <div class="card card-body h-100  border-info">
+          <div class="card card-body h-100 border-info">
             <h4>Personal Details</h4>
             <hr>
             <p>Full Name- Kumar Shanu<br>
@@ -159,6 +165,7 @@
           Shanu</a>
       </div>
     </footer>
+    <script type="text/javascript" src="JS/script.js"></script>
   </body>
 
 </html>

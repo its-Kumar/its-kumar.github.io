@@ -5,9 +5,8 @@ Host website using github pages
 
 ## URL
 
-Visit Now :- https://its-kumar.github.io/
+Visit Now :- <https://its-kumar.github.io/>
 
 ## ScreenShot
 
 ![its-kumar](images/its-kumar.github.io.png)
-
