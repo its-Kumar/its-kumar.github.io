@@ -1,10 +1,11 @@
-:root{
+:root {
 	--mainColor: lightgrey;
 	--secondaryColor: white;
 	--mainText: #212121;
+	--mainHr: rgba(0,0,0,0.1);
 }
 
-body{
+body {
 	background-color: var(--mainColor) !important;
 	color: var(--mainText) !important;
 	font-family: sans-serif !important;
@@ -15,25 +16,26 @@ header {
 	top: 0;
 	display: table !important;
 	table-layout: fixed;
-	padding-left: 16px ;
-	padding-right:16px ;
-	transition: opacity .5s,padding-left .125s;
+	padding-left: 16px;
+	padding-right: 16px;
+	transition: opacity .5s, padding-left .125s;
 	width: 100%;
 	min-width: 100%;
+	background-color: var(--mainColor);
 }
 
-#logo{
+#logo {
 	display: table-cell;
 	max-width: 380px;
 	vertical-align: middle;
 }
 
-#logo a{
+#logo a {
 	text-decoration: none;
 	cursor: pointer;
 }
 
-#logo span{
+#logo span {
 	display: inline-block;
 	max-width: 380px;
 	/* overflow: hidden; */
@@ -44,23 +46,23 @@ header {
 	line-height: 1.333;
 }
 
-#nav-wrapper{
+#nav-wrapper {
 	min-width: 100%;
 	display: table-cell;
 	vertical-align: middle;
 }
 
-#nav-bar{
+#nav-bar {
 	text-align: right;
 }
 
-#nav-bar ul{
+#nav-bar ul {
 	font-size: 16px;
 	list-style-type: none;
 
 }
 
-#nav-bar ul li{
+#nav-bar ul li {
 	display: inline-block;
 	/*overflow: visible;*/
 	position: relative;
@@ -70,46 +72,51 @@ header {
 	padding: 10px 12px;
 }
 
-#nav-bar ul li a{
+#nav-bar ul li a {
 	color: var(--mainText);
 	text-decoration: none;
 	font-weight: 400;
 	cursor: pointer;
 }
 
-#search-wrapper{
+#search-wrapper {
 	display: table-cell;
 	position: relative;
 }
 
-#profile-wrapper{
+#profile-wrapper {
 	text-align: center;
 }
 
-#profile-pic{
-	width:150px;
+#profile-pic {
+	width: 150px;
 	height: 150px;
 	border-radius: 50%;
 	margin-left: auto;
-  	margin-right: auto;
+	margin-right: auto;
 }
 
-ul{
+ul {
 	padding: 0;
-    list-style-type: none;
+	list-style-type: none;
 }
 
 
-.social-links ul, li{
-	list-style-type:none;
+.social-links ul,
+li {
+	list-style-type: none;
 	display: inline-block;
 }
 
-.social{
-	width:20px;
+.social {
+	width: 20px;
 	height: 20px;
 }
 
-.card{
+.card {
 	background-color: var(--secondaryColor) !important;
+}
+
+hr {
+	border-top: 1px solid var(--mainHr);
 }

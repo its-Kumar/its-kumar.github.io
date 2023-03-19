@@ -19,6 +19,7 @@ themeChanger.addEventListener("click", function () {
     setTheme(mode);
 })
 
+
 if (theme == null) {
     setTheme('light')
 } else {
